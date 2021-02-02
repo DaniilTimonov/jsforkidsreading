@@ -6,6 +6,103 @@
     <title>Глава2 типы данных и переменные</title>
 </head>
 <body>
-    
+    <script>
+var nick; // консоль выдаст undefined
+var age = 12; // само утверждение выдаст undefined
+age; // если ранее мы утвердили , что переменная age = 12 , выдаст число 12
+age = 13; // чтобы поменять значение достаточно будет просто подставить в равенство другое число, уже нет смысла обьявлять ее заново
+var numberOfSiblings = 1 + 3; /* // Сначала мы создали переменную с именем numberOfSiblings 
+(количество братьев и сестер) и присвоили ей значение выражения 1 + 3 (которое JavaScript вычислил, получив 4). */
+var numberOfCandies = 8; // Потом мы создали переменную numberOfCandies (количество карамелек) и присвоили ей значение 8.
+numberOfCandies / numberOfSiblings;/*  И наконец, мы ввели: numberOfCandies / numberOfSiblings.
+Поскольку переменная numberOfCandies содержит
+значение 8, а numberOfSiblings — 4, JavaScript вычислил, сколько
+будет 8 / 4, вернув в результате 2. */
+var secondsinaminute = 60;
+var minutesinahour = 60; 
+var secondsinahour = secondsinaminute * minutesinahour; /* здесь мы вычислили сколько именно секунж будет в одном часе */
+var hoursinaday = 24;
+var secondsinaday = secondsinahour * hoursinaday; /* зная сколько секунд в одном часе , за это отвечает переменная secondsinahour мы вычисляем сколько секунд в сутках */
+var daysinayear = 365;
+var secondsinayear = secondsinaday * daysinayear; 
+var age = 33;
+age * secondsinayear;
+
+//инкремент увеличивает 
+var pluss = 0;
+++pluss; //в консоле выдаст 1 так ++ отвечает за увеличение
+//декремент уменьшает 
+var minus = 1;
+--minus; //уменьшает на один 
+        //+= (плюс-равно) и –= (минус-равно)
+var score = 10;
+score += 7;
+
+/* какой то такой проект */
+"эЙ, КаК делА?".toLowerCase();
+
+var takoitext = "эЙ, КаК делА?";
+var lowertakoitext = takoitext.toLowerCase();
+var firstcharacter = lowertakoitext[0];
+var firstcharacterUpper = firstcharacter.toUpperCase();
+var restOfString = lowertakoitext.slice(1);
+firstcharacterUpper + restOfString;
+var takoitext = true;
+/* Человек собрался в учебное заведение */
+var hadShower = true; /* человек принял душ */
+var hasBackpack = false; /* человек не взял с собой портфель с учебными материалами */
+hadShower && hasBackpack; /* одно из условий не выполнено нет собой портфеля, поход в учебное заведение провален */
+/* собрав все нужное для учебного заведения мы берем с собой что то из еды */
+var hasApple = true;
+var hasOrange = false;
+/* console.log(hasApple || hasOrange); */
+/*!(НЕ) Оператор !  означает "не"*/
+var isWekend = true;
+var needToShowerToday = !isWekend;
+console.log(needToShowerToday);
+/* ----------------------------------------------- */
+/* идем в школу */
+var isWeekend = false;
+var hadShower = true;
+var hasApple = false;
+var hasOrange = true;
+var shouldGoToSchool = !isWeekend && hadShower && (hasApple || hasOrange);
+
+/* ограничение по росту */
+var height = 150;
+var heightRestriction = 150;
+height >= heightRestriction;
+
+/* Ограничение по росту , для детей, проверка на рост больше чем допускается */
+var height = 180;
+var heightRestriction = 120;
+height <= heightRestriction;
+
+/* вы загадали число от 1 до 9, 3 угадывают, загадали число 5 */
+var mySecretNumber = 5;
+var chicoGuess = 3;
+mySecretNumber === chicoGuess;
+/* приблизительно равно */
+var stringNumber = "5";
+var actualNumber = 5;
+stringNumber === actualNumber;
+
+/* код для пропускной системы кинотеатра */
+var age = 11;
+var accompanied = true;
+age = accompanied
+
+/* undefined & null */
+
+/* JavaScript использует значение undefined, когда не может найти иного
+значения. Например, если, создав новую переменную, вы не присвоите ей
+значение с помощью оператора =, ее значением будет undefi ned:
+ */
+ var myVariable;
+/*  А значение null обычно используется, чтобы явно обозначить —
+«тут пусто». */
+var mynullvariable = null;
+
+</script>
 </body>
 </html>
